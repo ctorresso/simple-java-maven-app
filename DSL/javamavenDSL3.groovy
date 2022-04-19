@@ -7,7 +7,6 @@ job('Java Maven App DSL 3') {
         }
     }
     triggers {
-	    cron('H/3 * * * *')
     	githubPush()
     }    
     steps {
@@ -20,7 +19,7 @@ job('Java Maven App DSL 3') {
           goals('test')
         }
         shell('''
-          echo "Entrega: Desplegando la aplicación" 
+          echo "Entrega: Desplegando la aplicación asdas" 
           java -jar "/var/jenkins_home/workspace/Java Maven App DSL 3/target/my-app-1.0-SNAPSHOT.jar"
         ''')  
     }
@@ -49,6 +48,9 @@ job('Java Maven App DSL 3') {
 
 job('Job test Hola Mundo') {
 	description('Aplicacion Hola Mundo de Prueba')
+	triggers {
+    		githubPush()
+    	}
 	steps {
 		shell('''
 			echo "Hola Christopher!!!"
