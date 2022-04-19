@@ -7,6 +7,7 @@ job('Java Maven App DSL 3') {
         }
     }
     triggers {
+	    pollSCM('* * * * *')
     	githubPush()
     }    
     steps {
@@ -49,6 +50,7 @@ job('Java Maven App DSL 3') {
 job('Job test Hola Mundo') {
 	description('Aplicacion Hola Mundo de Prueba')
 	triggers {
+		pollSCM('* * * * *')
     		githubPush()
     	}
 	steps {
