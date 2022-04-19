@@ -20,7 +20,7 @@ job('Java Maven App DSL 3') {
           goals('test')
         }
         shell('''
-          echo "Entrega: @@@@@@@" 
+          echo "Entrega: Esta es una prueba desde Terminal" 
           java -jar "/var/jenkins_home/workspace/Java Maven App DSL 3/target/my-app-1.0-SNAPSHOT.jar"
         ''')  
     }
@@ -55,7 +55,7 @@ job('Job test Hola Mundo') {
     	}
 	steps {
 		shell('''
-			echo "TRAVEZZZZZ!!!!!"
+			echo "Prueba desde la terminal!!!!!"
 		''')
 	}
 }
