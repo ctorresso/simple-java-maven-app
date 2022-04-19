@@ -7,7 +7,7 @@ job('Java Maven App DSL 3') {
         }
     }
     triggers {
-	    cron('* * * * *')
+	    cron('H/30 * * * *')
 	    githubPush()
     }    
     steps {
@@ -50,7 +50,7 @@ job('Java Maven App DSL 3') {
 job('Job test Hola Mundo') {
 	description('Aplicacion Hola Mundo de Prueba')
 	triggers {
-		cron('* * * * *')
+		cron('H/30 * * * *')
     		githubPush()
     	}
 	steps {
