@@ -54,7 +54,7 @@ job('Job test Hola Mundo') {
     	}
 	steps {
 		shell('''
-			echo "Veremos si se muestra en Jenkins !!!!!"
+			echo "Estoy HARTOO !!!!!"
 		''')
 	}
 }
