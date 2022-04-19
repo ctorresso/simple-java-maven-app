@@ -8,7 +8,7 @@ job('Java Maven App DSL 3') {
     }
     triggers {
 	    cron('H/1 * * * *')
-    	githubPush()
+	    githubPush()
     }    
     steps {
         maven {
@@ -20,7 +20,7 @@ job('Java Maven App DSL 3') {
           goals('test')
         }
         shell('''
-          echo "Entrega: Desplegando la aplicación veremos si la prueba esta jalando" 
+          echo "Entrega: Prueba en Jenkins" 
           java -jar "/var/jenkins_home/workspace/Java Maven App DSL 3/target/my-app-1.0-SNAPSHOT.jar"
         ''')  
     }
@@ -55,7 +55,7 @@ job('Job test Hola Mundo') {
     	}
 	steps {
 		shell('''
-			echo "Esta es una prueba si esta jalando en jenkins!!!!!"
+			echo "Ya esta jalando !!!!!"
 		''')
 	}
 }
