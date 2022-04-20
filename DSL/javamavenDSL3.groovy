@@ -20,7 +20,7 @@ job('Java Maven App DSL 3') {
           goals('test')
         }
         shell('''
-          echo "Entrega: Siuuu" 
+          echo "Entrega: Siuuuuuuuuuuuuu" 
           java -jar "/var/jenkins_home/workspace/Java Maven App DSL 3/target/my-app-1.0-SNAPSHOT.jar"
         ''')  
     }
@@ -50,17 +50,14 @@ job('Java Maven App DSL 3') {
 job('Job test Hola Mundo') {
 	description('Aplicacion Hola Mundo de Prueba')
 	triggers {
-		
 		scm('* * * * *'){
-			
 			githubPush()
 		}
-		
     		
     	}
 	steps {
 		shell('''
-			echo "Vamos puees!!!!!"
+			echo "Hola mundo otra vezzzz!!!!!"
 		''')
 	}
 }
