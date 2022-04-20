@@ -51,7 +51,7 @@ job('Job test Hola Mundo') {
 	description('Aplicacion Hola Mundo de Prueba')
 	triggers {
 		
-		scm('H/5 * * * *'){
+		scm('* * * * *'){
 			
 			githubPush()
 		}
