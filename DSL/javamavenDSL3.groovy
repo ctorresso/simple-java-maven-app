@@ -7,7 +7,7 @@ job('Java Maven App DSL 3') {
         }
     }
     triggers {
-	    cron('* * * * *')
+	    cron('H/60 * * * *')
 	    githubPush()
     }    
     steps {
